@@ -29,19 +29,42 @@ describe('enhancer.js', () => {
             });
         });
 
-        describe('success(item)', () => {
-            it('should pass', () => {
+        describe('succeed(item)', () => {
+            it('should return an enhanced object', () => {
+                const item = {
+                    name: "name",
+                    durability: 0,
+                    enhancement: 0
+                }
+                expect(enhancer.succeed(item).enhancement).toBe(item.enhancement+1);
+            });
+
+            it('should return an enhanced object at level 20', () => {
+                const item = {
+                    name: "name",
+                    durability: 0,
+                    enhancement: 20
+                }
+                expect(enhancer.succeed(item).enhancement).toBe(20);
+            });
+
+            it('should not change the durability', () => {
+                const item = {
+                    name: "name",
+                    durability: 0,
+                    enhancement: 0
+                }
+                expect(enhancer.succeed(item).durability).toBe(item.durability);
+            });
+        });
+
+        describe('fail(item)', () => {
+            it('should return an enhanced object', () => {
                 
             });
         });
 
-        describe('repair(item)', () => {
-            it('should pass', () => {
-                
-            });
-        });
-
-        describe('repair(item)', () => {
+        describe('get()', () => {
             it('should pass', () => {
                 
             });
