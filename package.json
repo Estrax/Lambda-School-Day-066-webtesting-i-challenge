@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:Estrax/Lambda-School-Day-066-webtesting-i-challenge.git",
   "author": "Łukasz Siatka <lukasz@lukaszsiatka.pl>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch"
+  }
 }
