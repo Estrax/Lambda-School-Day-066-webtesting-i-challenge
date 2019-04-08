@@ -94,7 +94,7 @@ describe('enhancer.js', () => {
                     durability: 0,
                     enhancement: 0
                 }
-                expect(enhancer.succeed(item).enhancement).toBe(item.enhancement+1);
+                expect(enhancer.succeed(item).name).toBe(item.name);
             });
 
             it('should not change the durability', () => {
@@ -178,7 +178,7 @@ describe('enhancer.js', () => {
                     durability: 0,
                     enhancement: 0
                 }
-                expect(enhancer.fail(item).enhancement).toBe(item.enhancement+1);
+                expect(enhancer.fail(item).name).toBe(item.name);
             });
 
             it('should not change the durability', () => {
