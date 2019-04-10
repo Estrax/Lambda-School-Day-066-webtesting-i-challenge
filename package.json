@@ -1,0 +1,14 @@
+{
+  "name": "Lambda-School-Day-066-webtesting-i-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Estrax/Lambda-School-Day-066-webtesting-i-challenge.git",
+  "author": "Łukasz Siatka <lukasz@lukaszsiatka.pl>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
